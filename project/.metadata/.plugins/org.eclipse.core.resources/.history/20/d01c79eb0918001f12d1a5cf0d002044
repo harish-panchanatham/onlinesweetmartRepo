@@ -1,0 +1,27 @@
+package com.cg.onlinesweetmart.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.cg.onlinesweetmart.entity.SweetOrder;
+import com.cg.onlinesweetmart.entity.User;
+import com.cg.onlinesweetmart.repository.SweetOrderRepository;
+import com.cg.onlinesweetmart.repository.UserRepository;
+import com.cg.onlinesweetmart.service.SweetOrderService;
+
+@Service
+public class SweerOrderServiceImpl implements SweetOrderService{
+
+	@Autowired
+	private SweetOrderRepository sweetOrderRepository;
+	
+	@Autowired
+	private UserRepository userRepository;
+	
+	public SweetOrder addSweetOrder(long userId, SweetOrder sweetOrder) {
+		User user = userRepository.findById(userId).get();
+		sweetOrder.setUser(user);
+		return sweetOrderRepository.save(sweetOrder);
+	}
+
+}

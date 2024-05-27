@@ -1,0 +1,68 @@
+package com.cg.onlinesweetmart.entity;
+
+import java.util.List;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToMany;
+
+@Entity
+public class Cart {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int cartId;
+	private double grandTotal;
+	private List<Product> listProduct;
+	private int productCount;
+	
+	public Cart() {
+		super();
+	}
+
+	public Cart(int cartId, double grandTotal, List<Product> listProduct, int productCount) {
+		super();
+		this.cartId = cartId;
+		this.grandTotal = grandTotal;
+		this.listProduct = listProduct;
+		this.productCount = productCount;
+	}
+
+	public int getCartId() {
+		return cartId;
+	}
+
+	public void setCartId(int cartId) {
+		this.cartId = cartId;
+	}
+
+	public double getGrandTotal() {
+		return grandTotal;
+	}
+
+	public void setGrandTotal(double grandTotal) {
+		this.grandTotal = grandTotal;
+	}
+
+	public List<Product> getListProduct() {
+		return listProduct;
+	}
+
+	public void setListProduct(List<Product> listProduct) {
+		this.listProduct = listProduct;
+	}
+
+	public int getProductCount() {
+		return productCount;
+	}
+
+	public void setProductCount(int productCount) {
+		this.productCount = productCount;
+	}
+	
+	
+
+}

@@ -1,0 +1,37 @@
+package com.cg.onlinesweetmart.serviceimpl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.cg.onlinesweetmart.entity.Customer;
+import com.cg.onlinesweetmart.repository.CustomerRepository;
+import com.cg.onlinesweetmart.service.CustomerService;
+
+@Service
+public class CustomerServiceImpl implements CustomerService{
+	
+	@Autowired
+	private CustomerRepository customerRepository;
+
+	public Customer addCustomer(Customer customer) {
+		return customerRepository.save(customer);
+	}
+
+	public Customer showCustomer(int userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Customer> showAllCustomer() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Customer updateCustomer(Customer customer) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

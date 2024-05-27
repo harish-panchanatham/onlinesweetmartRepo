@@ -1,0 +1,16 @@
+package com.cg.onlinesweetmart.entity;
+
+import java.util.List;
+
+public class Cart {
+
+	private int cartId;
+	private double grandTotal;
+	private List<Product> listProduct;
+	private int productCount;
+	
+	public Cart() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,28 @@
+package com.cg.onlinesweetmart.entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Customer extends User{
+
+	private Cart cart;
+
+	public Customer() {
+		super();
+	}
+
+	public Customer(Cart cart) {
+		super();
+		this.cart = cart;
+	}
+
+	public Cart getCart() {
+		return cart;
+	}
+
+	public void setCart(Cart cart) {
+		this.cart = cart;
+	}
+	
+	
+}

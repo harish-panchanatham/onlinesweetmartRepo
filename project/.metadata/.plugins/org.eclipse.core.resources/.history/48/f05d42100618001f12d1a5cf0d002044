@@ -1,0 +1,14 @@
+//package com.cg.onlinesweetmart.entity;
+//
+//import jakarta.persistence.Entity;
+//import jakarta.persistence.Table;
+//
+//@Entity
+//@Table(name = "sweet_orders")
+//public class SweetOrder {
+//	
+//	private int sweetOrderId;
+//	
+//	private 
+//
+//}

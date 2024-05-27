@@ -1,0 +1,5 @@
+package com.cg.onlinesweetmart.serviceimpl;
+
+public interface CartServiceImpl {
+
+}

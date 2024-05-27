@@ -1,0 +1,9 @@
+package com.cg.onlinesweetmart.entity;
+
+public class Cart {
+
+	public Cart() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

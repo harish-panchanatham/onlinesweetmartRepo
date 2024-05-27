@@ -1,0 +1,42 @@
+package com.cg.onlinesweetmart.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
+
+@Entity
+public class Authorities {
+
+	@OneToOne
+	@JoinColumn(referencedColumnName = "username")
+	private User user;
+	private String authority;
+	
+	public Authorities() {
+		super();
+	}
+	
+	public Authorities(User user, String authority) {
+		super();
+		this.user = user;
+		this.authority = authority;
+	}
+	
+	public User getUser() {
+		return user;
+	}
+	
+	public void setUser(User user) {
+		this.user = user;
+	}
+	
+	public String getAuthority() {
+		return authority;
+	}
+	
+	public void setAuthority(String authority) {
+		this.authority = authority;
+	}
+	
+	
+}

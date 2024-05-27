@@ -1,0 +1,9 @@
+package com.cg.onlinesweetmart.controller;
+
+public class CartController {
+
+	public CartController() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

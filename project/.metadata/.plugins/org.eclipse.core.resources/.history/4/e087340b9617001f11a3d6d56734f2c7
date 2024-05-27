@@ -1,0 +1,32 @@
+//package com.cg.onlinesweetmart.entity;
+//
+//import jakarta.persistence.Entity;
+//import jakarta.persistence.JoinColumn;
+//import jakarta.persistence.OneToOne;
+//
+//@Entity
+//public class Customer extends User{
+//
+//	@OneToOne
+//	@JoinColumn
+//	private Cart cart;
+//
+//	public Customer() {
+//		super();
+//	}
+//
+//	public Customer(Cart cart) {
+//		super();
+//		this.cart = cart;
+//	}
+//
+//	public Cart getCart() {
+//		return cart;
+//	}
+//
+//	public void setCart(Cart cart) {
+//		this.cart = cart;
+//	}
+//	
+//	
+//}
